@@ -23,4 +23,21 @@
     // Insert code here to tear down your application
 }
 
+- (void)loadView:(NSString*)viewName{
+    if (_currentViewController){
+        [[_currentViewController view]removeFromSuperview];
+    }
+    _currentViewController = [[NSViewController alloc]initWithNibName:viewName bundle:nil];
+    NSView *view = [_currentViewController view];
+    [_contentView addSubview:view];
+}
+
+- (IBAction)loadView1:(id)sender {
+    [self loadView:@"SubView1"];
+}
+
+- (IBAction)loadView2:(id)sender {
+    [self loadView:@"SubView2"];
+}
+
 @end

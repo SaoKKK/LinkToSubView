@@ -11,6 +11,10 @@
 		B91C5DB21C5AEE710019D717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C5DB11C5AEE710019D717 /* main.m */; };
 		B91C5DB41C5AEE710019D717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91C5DB31C5AEE710019D717 /* Assets.xcassets */; };
 		B91C5DB71C5AEE710019D717 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91C5DB51C5AEE710019D717 /* MainMenu.xib */; };
+		B91C5DC21C5AF02B0019D717 /* SubView1.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C5DC01C5AF02B0019D717 /* SubView1.m */; };
+		B91C5DC31C5AF02B0019D717 /* SubView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91C5DC11C5AF02B0019D717 /* SubView1.xib */; };
+		B91C5DC51C5AF0C60019D717 /* SubView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91C5DC41C5AF0C60019D717 /* SubView2.xib */; };
+		B91C5DCA1C5AF2390019D717 /* SubView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C5DC91C5AF2390019D717 /* SubView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,12 @@
 		B91C5DB31C5AEE710019D717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B91C5DB61C5AEE710019D717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B91C5DB81C5AEE720019D717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91C5DBF1C5AF02B0019D717 /* SubView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubView1.h; sourceTree = "<group>"; };
+		B91C5DC01C5AF02B0019D717 /* SubView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubView1.m; sourceTree = "<group>"; };
+		B91C5DC11C5AF02B0019D717 /* SubView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubView1.xib; sourceTree = "<group>"; };
+		B91C5DC41C5AF0C60019D717 /* SubView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubView2.xib; sourceTree = "<group>"; };
+		B91C5DC81C5AF2390019D717 /* SubView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubView2.h; sourceTree = "<group>"; };
+		B91C5DC91C5AF2390019D717 /* SubView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,7 @@
 				B91C5DAD1C5AEE700019D717 /* AppDelegate.h */,
 				B91C5DAE1C5AEE710019D717 /* AppDelegate.m */,
 				B91C5DB31C5AEE710019D717 /* Assets.xcassets */,
-				B91C5DB51C5AEE710019D717 /* MainMenu.xib */,
+				B91C5DBE1C5AEE930019D717 /* Xib */,
 				B91C5DB81C5AEE720019D717 /* Info.plist */,
 				B91C5DB01C5AEE710019D717 /* Supporting Files */,
 			);
@@ -69,6 +79,20 @@
 				B91C5DB11C5AEE710019D717 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B91C5DBE1C5AEE930019D717 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				B91C5DB51C5AEE710019D717 /* MainMenu.xib */,
+				B91C5DBF1C5AF02B0019D717 /* SubView1.h */,
+				B91C5DC01C5AF02B0019D717 /* SubView1.m */,
+				B91C5DC11C5AF02B0019D717 /* SubView1.xib */,
+				B91C5DC81C5AF2390019D717 /* SubView2.h */,
+				B91C5DC91C5AF2390019D717 /* SubView2.m */,
+				B91C5DC41C5AF0C60019D717 /* SubView2.xib */,
+			);
+			name = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C5DC51C5AF0C60019D717 /* SubView2.xib in Resources */,
 				B91C5DB41C5AEE710019D717 /* Assets.xcassets in Resources */,
+				B91C5DC31C5AF02B0019D717 /* SubView1.xib in Resources */,
 				B91C5DB71C5AEE710019D717 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C5DCA1C5AF2390019D717 /* SubView2.m in Sources */,
+				B91C5DC21C5AF02B0019D717 /* SubView1.m in Sources */,
 				B91C5DB21C5AEE710019D717 /* main.m in Sources */,
 				B91C5DAF1C5AEE710019D717 /* AppDelegate.m in Sources */,
 			);
