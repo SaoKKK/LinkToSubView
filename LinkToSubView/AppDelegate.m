@@ -29,6 +29,8 @@
     }
     _currentViewController = [[NSViewController alloc]initWithNibName:viewName bundle:nil];
     NSView *view = [_currentViewController view];
+    view.frame = _contentView.bounds;
+    [view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     [_contentView addSubview:view];
 }
 
